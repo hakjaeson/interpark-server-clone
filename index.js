@@ -25,7 +25,7 @@ app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 // REST API 요청 처리
 // 첫페이지
-app.get("/api-docs", function (req, res) {
+app.get("/", function (req, res) {
   res.send("인터파크 API");
 });
 // 게시판 API (백엔드 호출 함수)
